@@ -1,12 +1,10 @@
 /**
  * @param {number} n
  * @return {string[]}
- */
 
-
-let fizzBuzz = function(n) {
-    const answer = [];
-    for (let i = 1; i <= n; i++){
+function fizzBuzz(n: number): string[] {
+    const answer: string[]= [];
+    for (let i: number = 1; i <= n; i++){
         if(i % 3 === 0 && i % 5 === 0){
             answer.push("FizzBuzz");   
         } else if(i % 3 === 0){
@@ -19,5 +17,3 @@ let fizzBuzz = function(n) {
     }
     return answer;
 };
-
-
