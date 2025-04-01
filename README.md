@@ -1,1 +1,1 @@
-leetcode solutions written in javascript/typescript, no AI used.
+leetcode solutions written in javascript & typescript
