@@ -1,0 +1,10 @@
+let createCounter = function(n) {
+    return function() {
+        let  count = 0, a;
+        if (count == 0){
+            count++;
+            a = n++;
+            return a;
+        }
+    };
+};
