@@ -1,0 +1,14 @@
+let map = function(arr, fn) { // integer array = arr | mapping function = fn
+                              // format returned = returnArray[i] = fn(arr[i], i))   
+                                       
+        const returnedArray = [];    
+        for(let i = 0; i <= arr.length-1; i++){// i = 0, arr.length where arr = [10,20,30] arr.length = 3 
+            returnedArray[i] = fn(arr[i], i);
+        }   
+        return returnedArray;
+        
+
+    
+};
+
+
