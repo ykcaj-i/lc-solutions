@@ -1,0 +1,47 @@
+//w.i.p either all test cases pass but not with the right answer or only 2 test case pass
+
+    let longestSubstr;
+    const leftovers = [];
+    const repeat = [];
+    const substr = []; 
+    //a b c a b c a b
+    for(let i = 0; i < s.length; i++){ 
+        if(s[i]){ //if a char repeats, delete all previous iterations
+        //otherwise run this function like normal to keep pushing string elements
+
+        } else {
+            if(s[i] !== s[i-1] && substr.every(element => element !== s[i])){ 
+                if(s[i] !== s[i-1]){ //p !== null, w !== w, w !== k, k !== e, e !== w
+                    substr.push(s[i]); 
+                } else {
+                substr.shift();
+                }
+                console.log(substr);
+            } else {
+            leftovers.push(s[i]);
+            console.log(leftovers);
+            }
+        }
+        
+    }
+
+    longestSubstr = substr.join("");
+
+    /**
+     if (s.includes(longestSubstr) === true){
+        //return longestSubtr.length; 
+        console.log("true");
+    } else {
+        console.log("false");
+        for(let i = 0; i < s.length; i++){
+            if(!s.includes(longestSubstr)){
+
+            }
+        }
+    } 
+    */
+
+    console.log(longestSubstr);
+    console.log(substr.length);
+    return longestSubstr.length;
+
